@@ -22,7 +22,7 @@
 function twentytwelve_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
-		'default-text-color'     => '515151',
+		'default-text-color'     => 'ff5151',
 		'default-image'          => '',
 
 		// Set height and width, with a maximum value for the width.
@@ -92,7 +92,7 @@ function twentytwelve_header_style() {
 	?>
 		.site-header h1 a,
 		.site-header h2 {
-			color: #<?php echo $text_color; ?>;
+			color: #<?php echo "0000ff"; ?>;
 		}
 	<?php endif; ?>
 	</style>

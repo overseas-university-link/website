@@ -14,7 +14,7 @@
  * @since Twenty Twelve 1.0
  */
 
-get_header(); ?>
+get_header(); $search = get_search_form(false); echo $search;?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">

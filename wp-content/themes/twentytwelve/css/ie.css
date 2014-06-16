@@ -70,9 +70,10 @@ body.full-width .site-content {
 	line-height: 1.846153846;
 }
 .main-navigation ul.nav-menu,
-.main-navigation div.nav-menu > ul {
+.main-navigation div.nav-menu, ul {
 	border-bottom: 1px solid #ededed;
-	border-top: 1px solid #ededed;
+	border-top: 1px solid #ff0000;
+        background-color: #dddddd;
 	display: inline-block !important;
 	text-align: left;
 	width: 100%;

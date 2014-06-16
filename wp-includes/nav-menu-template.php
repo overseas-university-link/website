@@ -400,10 +400,11 @@ function wp_nav_menu( $args = array() ) {
 	$items = apply_filters( "wp_nav_menu_{$menu->slug}_items", $items, $args );
 
 	// Don't print any markup if there are no items at this point.
-	if ( empty( $items ) )
-		return false;
+	if (empty($items)) {
+        return false;
+        }
 
-	$nav_menu .= sprintf( $args->items_wrap, esc_attr( $wrap_id ), esc_attr( $wrap_class ), $items );
+    $nav_menu .= sprintf( $args->items_wrap, esc_attr( $wrap_id ), esc_attr( $wrap_class ), $items );
 	unset( $items );
 
 	if ( $show_container )
